@@ -1,0 +1,18 @@
+// Library - SBD3_analog, Cell - SBD3_analog_top_V1, View - schematic 
+// LAST TIME SAVED: Aug 5 11:21:49 2020 
+// NETLISTTIME: Aug 5 16:17:49 2020 
+'timescale 1ns/1ns 
+module SBD3_analog_top_V1 (      AINO_WKD, 	
+FOUTR, SARADC_D,SARADC_EOCD,            CIN, VBAT, PD_CSOR_R,	  PD_SARADCD, RESET_SARADCD, SARADC_CLKD, 	SARADC_SOCD ); 
+
+input FOUTR, AINO_WKD, SARADC_EOCD, VBAT, PD_SARADCD, RESET_SARADCD, SARADC_CLKD, SARADC_SOCD;
+
+output [11:0] SARADC_D;
+
+inout [15:0] CIN,   	 PD_CSOR_R;
+input [1:0] CSOR_ISEL_R;
+
+
+specify
+
+
